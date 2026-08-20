@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VEX</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #0a0b0d;
-    --panel: #15171c;
-    --panel-2: #1c1f26;
-    --lime: #cfff04;
-    --violet: #7c5cfc;
-    --text: #f2f3f0;
-    --muted: #8a8f98;
-    --line: #2a2d34;
-  }
-
-  *{ box-sizing: border-box; }
-  html{ scroll-behavior: smooth; }
-
-  body{
-    margin:0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Space Grotesk', sans-serif;
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  /* scanline / CRT texture */
-  body::before{
-    content:"";
-    position: fixed;
-    inset:0;
-    pointer-events:none;
-    z-index: 50;
-    background: repeating-linear-gradient(
-      to bottom,
-      rgba(255,255,255,0.025) 0px,
+5,0.025) 0px,
       rgba(255,255,255,0.025) 1px,
       transparent 1px,
       transparent 3px
